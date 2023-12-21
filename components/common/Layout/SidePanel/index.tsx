@@ -5,8 +5,11 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { PiGithubLogo } from "react-icons/pi";
 import { CiLinkedin } from "react-icons/ci";
 import { TbWorldWww } from "react-icons/tb";
+import { useRouter } from "next/router";
+import { IoMdAdd } from "react-icons/io";
 
 function SidePanel() {
+  const router = useRouter();
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
   return (
     <div
@@ -25,20 +28,78 @@ function SidePanel() {
       <hr className="mt-4" />
       <div className="h-[85vh]">
         <div className="pt-8 space-y-2 h-[50%]">
-          <div className="flex w-[310px] overflow-hidden gap-5 items-center hover:bg-white hover:bg-opacity-20 hover:rounded-lg cursor-pointer">
-            <div className="flex h-[50px] ml-2 w-[50px] rounded-lg overflow-hidden justify-center items-center">
+          <div
+            className={`flex w-[310px] overflow-hidden gap-5 items-center hover:bg-white hover:bg-opacity-20 ${
+              isSideBarOpen &&
+              router.pathname === "/dashboard" &&
+              "bg-white bg-opacity-20"
+            } rounded-lg cursor-pointer`}
+            onClick={() => router.push("/dashboard")}
+          >
+            <div
+              className={`flex h-[50px] ml-2 w-[50px] rounded-lg overflow-hidden justify-center items-center ${
+                !isSideBarOpen &&
+                router.pathname === "/dashboard" &&
+                "bg-white bg-opacity-20"
+              }`}
+            >
               <RxDashboard className="text-white text-4xl" />
             </div>
             <div className="text-xl font-semibold text-gray-300">Dashboard</div>
           </div>
-          <div className="flex w-[310px] overflow-hidden gap-5 items-center hover:bg-white hover:bg-opacity-20 hover:rounded-lg cursor-pointer">
-            <div className="flex h-[50px] ml-2 w-[50px] rounded-lg overflow-hidden justify-center items-center">
+          <div
+            className={`flex w-[310px] overflow-hidden gap-5 items-center hover:bg-white hover:bg-opacity-20 ${
+              isSideBarOpen &&
+              router.pathname === "/my-blogs" &&
+              "bg-white bg-opacity-20"
+            } rounded-lg cursor-pointer`}
+            onClick={() => router.push("/my-blogs")}
+          >
+            <div
+              className={`flex h-[50px] ml-2 w-[50px] rounded-lg overflow-hidden justify-center items-center ${
+                !isSideBarOpen &&
+                router.pathname === "/my-blogs" &&
+                "bg-white bg-opacity-20"
+              }`}
+            >
               <TbBrandBlogger className="text-white text-4xl" />
             </div>
             <div className="text-xl font-semibold text-gray-300">My Blogs</div>
           </div>
-          <div className="flex w-[310px] overflow-hidden gap-5 items-center hover:bg-white hover:bg-opacity-20 hover:rounded-lg cursor-pointer">
-            <div className="flex h-[50px] ml-2 w-[50px] rounded-lg overflow-hidden justify-center items-center">
+          <div
+            className={`flex w-[310px] overflow-hidden gap-5 items-center hover:bg-white hover:bg-opacity-20 ${
+              isSideBarOpen &&
+              router.pathname === "/add-blog" &&
+              "bg-white bg-opacity-20"
+            } rounded-lg cursor-pointer`}
+            onClick={() => router.push("/add-blog")}
+          >
+            <div
+              className={`flex h-[50px] ml-2 w-[50px] rounded-lg overflow-hidden justify-center items-center ${
+                !isSideBarOpen &&
+                router.pathname === "/add-blog" &&
+                "bg-white bg-opacity-20"
+              }`}
+            >
+              <IoMdAdd className="text-white text-4xl" />
+            </div>
+            <div className="text-xl font-semibold text-gray-300">Add Blog</div>
+          </div>
+          <div
+            className={`flex w-[310px] overflow-hidden gap-5 items-center hover:bg-white hover:bg-opacity-20 ${
+              isSideBarOpen &&
+              router.pathname === "/my-profile" &&
+              "bg-white bg-opacity-20"
+            } rounded-lg cursor-pointer`}
+            onClick={() => router.push("/my-profile")}
+          >
+            <div
+              className={`flex h-[50px] ml-2 w-[50px] rounded-lg overflow-hidden justify-center items-center ${
+                !isSideBarOpen &&
+                router.pathname === "/my-profile" &&
+                "bg-white bg-opacity-20"
+              }`}
+            >
               <FaRegUserCircle className="text-white text-4xl" />
             </div>
             <div className="text-xl font-semibold text-gray-300">

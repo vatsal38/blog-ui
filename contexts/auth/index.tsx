@@ -56,7 +56,7 @@ function AuthProvider(props: { children: React.ReactNode }) {
 
     if (decodedToken) {
       setIsAuthenticated(true);
-      route.push("/dashboard");
+      // route.push("/dashboard");
     } else {
       AuthServices.logOut();
       route.push("/login");
@@ -106,7 +106,7 @@ function AuthProvider(props: { children: React.ReactNode }) {
 
   useEffect(() => {
     checkAuthentication();
-  }, [route.pathname]);
+  }, []);
 
   const authValue = useMemo(
     () => ({

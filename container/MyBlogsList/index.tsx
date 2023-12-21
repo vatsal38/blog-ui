@@ -1,12 +1,13 @@
-import React, { Fragment } from "react";
+import Layout from "@components/common/Layout";
+import React from "react";
 import { FaRegUserCircle } from "react-icons/fa";
 
-function OtherBlogs() {
+function MyBlogsList() {
   return (
-    <Fragment>
+    <Layout>
       <div className="px-2">
         <span className="text-white text-xl font-semibold bg-blue-950 px-4 py-1 rounded-md">
-          Other Blogs
+          My Blogs
         </span>
         <div className="flex flex-col gap-4 w-full py-8">
           <div className="flex gap-4 w-full">
@@ -34,16 +35,11 @@ function OtherBlogs() {
                   ...READ MORE
                 </span>
               </div>
-              <div className="flex gap-4 py-4">
-                <div className="flex h-[50px] w-[50px] rounded-lg overflow-hidden justify-center items-center">
-                  <FaRegUserCircle className="text-blue-950 text-7xl" />
-                </div>
-                <div>
-                  <div className="font-semibold text-blue-950">
-                    Vatsal Mavani
-                  </div>
-                  <div className="w-44">20, December 2023</div>
-                </div>
+              <div className="text-right w-full pt-6">
+                At{" "}
+                <span className="text-blue-950 font-semibold">
+                  20, December 2023
+                </span>
               </div>
             </div>
           </div>
@@ -73,16 +69,11 @@ function OtherBlogs() {
                   ...READ MORE
                 </span>
               </div>
-              <div className="flex gap-4 py-4">
-                <div className="flex h-[50px] w-[50px] rounded-lg overflow-hidden justify-center items-center">
-                  <FaRegUserCircle className="text-blue-950 text-7xl" />
-                </div>
-                <div>
-                  <div className="font-semibold text-blue-950">
-                    Vatsal Mavani
-                  </div>
-                  <div className="w-44">20, December 2023</div>
-                </div>
+              <div className="text-right w-full pt-6">
+                At{" "}
+                <span className="text-blue-950 font-semibold">
+                  20, December 2023
+                </span>
               </div>
             </div>
           </div>
@@ -112,16 +103,11 @@ function OtherBlogs() {
                   ...READ MORE
                 </span>
               </div>
-              <div className="flex gap-4 py-4">
-                <div className="flex h-[50px] w-[50px] rounded-lg overflow-hidden justify-center items-center">
-                  <FaRegUserCircle className="text-blue-950 text-7xl" />
-                </div>
-                <div>
-                  <div className="font-semibold text-blue-950">
-                    Vatsal Mavani
-                  </div>
-                  <div className="w-44">20, December 2023</div>
-                </div>
+              <div className="text-right w-full pt-6">
+                At{" "}
+                <span className="text-blue-950 font-semibold">
+                  20, December 2023
+                </span>
               </div>
             </div>
           </div>
@@ -151,16 +137,11 @@ function OtherBlogs() {
                   ...READ MORE
                 </span>
               </div>
-              <div className="flex gap-4 py-4">
-                <div className="flex h-[50px] w-[50px] rounded-lg overflow-hidden justify-center items-center">
-                  <FaRegUserCircle className="text-blue-950 text-7xl" />
-                </div>
-                <div>
-                  <div className="font-semibold text-blue-950">
-                    Vatsal Mavani
-                  </div>
-                  <div className="w-44">20, December 2023</div>
-                </div>
+              <div className="text-right w-full pt-6">
+                At{" "}
+                <span className="text-blue-950 font-semibold">
+                  20, December 2023
+                </span>
               </div>
             </div>
           </div>
@@ -190,24 +171,19 @@ function OtherBlogs() {
                   ...READ MORE
                 </span>
               </div>
-              <div className="flex gap-4 py-4">
-                <div className="flex h-[50px] w-[50px] rounded-lg overflow-hidden justify-center items-center">
-                  <FaRegUserCircle className="text-blue-950 text-7xl" />
-                </div>
-                <div>
-                  <div className="font-semibold text-blue-950">
-                    Vatsal Mavani
-                  </div>
-                  <div className="w-44">20, December 2023</div>
-                </div>
+              <div className="text-right w-full pt-6">
+                At{" "}
+                <span className="text-blue-950 font-semibold">
+                  20, December 2023
+                </span>
               </div>
             </div>
           </div>
           <hr />
         </div>
       </div>
-    </Fragment>
+    </Layout>
   );
 }
 
-export default OtherBlogs;
+export default MyBlogsList;

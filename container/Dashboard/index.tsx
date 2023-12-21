@@ -4,7 +4,7 @@ import OtherBlogs from "@components/OtherBlogs";
 import Layout from "@components/common/Layout";
 import React from "react";
 
-function DashboardPage() {
+function Dashboard() {
   return (
     <Layout>
       <div className="space-y-12">
@@ -16,4 +16,4 @@ function DashboardPage() {
   );
 }
 
-export default DashboardPage;
+export default Dashboard;

@@ -1,3 +1,5 @@
+import Dashboard from "@container/Dashboard";
+
 export default function Home() {
-  return <main>{"Hello"}</main>;
+  return <Dashboard />;
 }
