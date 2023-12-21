@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <div className="sticky top-0 h-20 shadow-lg w-full pl-28 flex items-center justify-between bg-blue-50">
+    <div className="fixed top-0 h-20 shadow-lg w-full pl-28 flex items-center justify-between bg-blue-50">
       <div className="text-3xl tracking-wide font-bold text-blue-950">
         Explore the blogs with us
       </div>

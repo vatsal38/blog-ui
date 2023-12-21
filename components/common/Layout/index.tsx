@@ -13,7 +13,7 @@ const Layout: React.FC<IProps> = ({ children }) => {
         <SidePanel />
         <Navbar />
       </div>
-      <div className="pl-28 pt-4 max-w-[1600px] mx-auto">{children}</div>
+      <div className="pl-28 pt-24 max-w-[1600px] mx-auto">{children}</div>
     </Fragment>
   );
 };
