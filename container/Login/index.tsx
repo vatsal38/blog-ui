@@ -29,7 +29,7 @@ function Login() {
     <div className="relative w-full h-screen overflow-hidden">
       <div className="min-h-screen py-6 flex flex-col justify-center sm:py-12">
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-950 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
           <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:px-20 sm:py-14">
             <div className="max-w-md mx-auto">
               <div>
@@ -73,7 +73,7 @@ function Login() {
                   </div>
                   <div className="relative">
                     <button
-                      className="bg-blue-600 text-white font-semibold rounded-full px-12 h-10"
+                      className="bg-blue-950 text-white font-semibold rounded-full px-12 h-10"
                       onClick={login}
                     >
                       <div className="w-20">
