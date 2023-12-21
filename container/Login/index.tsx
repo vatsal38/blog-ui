@@ -73,10 +73,23 @@ function Login() {
                   </div>
                   <div className="relative">
                     <button
-                      className="bg-blue-600 text-white font-semibold rounded-full px-4 py-1 w-32"
+                      className="bg-blue-600 text-white font-semibold rounded-full px-12 h-10"
                       onClick={login}
                     >
-                      {isLoading ? <Loader size={4} /> : "Sign in"}
+                      <div className="w-20">
+                        {isLoading ? (
+                          <div className="flex justify-center w-full">
+                            <Loader
+                              color="#fff"
+                              type="spin"
+                              height={25}
+                              width={25}
+                            />
+                          </div>
+                        ) : (
+                          "Sign in"
+                        )}
+                      </div>
                     </button>
                   </div>
                   <div className="font-light text-gray-500">

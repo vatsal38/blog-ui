@@ -114,7 +114,20 @@ function Register() {
                       className="bg-blue-600 text-white font-semibold rounded-full px-4 py-1 w-32"
                       onClick={register}
                     >
-                      {isLoading ? <Loader size={4} /> : "Sign Up"}
+                      <div className="w-20">
+                        {!isLoading ? (
+                          <div className="flex justify-center w-full">
+                            <Loader
+                              color="#fff"
+                              type="spin"
+                              height={25}
+                              width={25}
+                            />
+                          </div>
+                        ) : (
+                          "Sign Up"
+                        )}
+                      </div>
                     </button>
                   </div>
                   <div className="font-light text-gray-500">
