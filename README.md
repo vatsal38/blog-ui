@@ -17,7 +17,7 @@ npm run dev
 ## Features
 
 - Sign up.
-- Log in.
+- Log in with token authantication.
 - Create blog.
 - List all blog.
 - List my blogs.
