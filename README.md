@@ -22,6 +22,10 @@ npm run dev
 - List all blog.
 - List my blogs.
 
+## Live link
+- Note: It can be take a couple of minutes due to free server.
+- Link: https://vm-blogs.vercel.app/
+
 ## Demo Screenshots
 
 ![image](https://github.com/vatsal38/blog-ui/assets/101249643/a21d2343-8e9f-4a06-91e4-f66489977ad8)
@@ -35,7 +39,7 @@ npm run dev
 - Next.js 
 - Tailwind css
 
-## clone below repo and get the api for blogs.
+## Clone below repo and get the api for blogs.
 https://github.com/vatsal38/blog-api-node
 
 ## .env.local file
