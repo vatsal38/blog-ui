@@ -21,8 +21,8 @@ function OtherBlogs(props: IProps) {
           <div className="flex flex-col gap-4 w-full py-8">
             {otherBlogs?.map((item: any, index: number) => (
               <Fragment key={index}>
-                <div className="flex gap-4 w-full">
-                  <div className="w-[400px] h-[200px]">
+                <div className="flex flex-col lg:flex-row gap-4 w-full">
+                  <div className="md:w-[400px] md:h-[200px]">
                     <img
                       src={item.image}
                       alt="qwe"

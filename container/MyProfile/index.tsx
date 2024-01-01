@@ -53,13 +53,6 @@ function MyProfile() {
               {user?.data?.username}
             </span>
           </div>
-          <div className="flex gap-4">
-            <span className="font-semibold text-gray-500">
-              Your Total Blogs
-            </span>
-            <span>:</span>
-            <span className="text-blue-950 font-semibold">25</span>
-          </div>
           <div className="pt-8">
             Click{" "}
             <span

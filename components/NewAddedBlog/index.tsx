@@ -19,10 +19,10 @@ function NewAddedBlog(props: PTypes) {
           New Added Blogs
         </span>
 
-        <div className="flex gap-4 w-full py-4">
+        <div className="flex flex-col xl:flex-row gap-4 w-full py-4">
           {!isBlogsLoading ? (
             <div className="w-full">
-              <div className="w-full h-[500px]">
+              <div className="w-full lg:h-[500px]">
                 <img
                   src={mainBlog?.[0]?.image}
                   alt="qwe"
@@ -57,15 +57,18 @@ function NewAddedBlog(props: PTypes) {
           {!isBlogsLoading ? (
             <div className="space-y-3 px-4">
               {rightSideBlogs?.map((item: any, index: number) => (
-                <div className="flex gap-4 w-full" key={index}>
-                  <div className="w-[200px] h-32">
+                <div
+                  className="flex flex-col sm:flex-row gap-4 w-full"
+                  key={index}
+                >
+                  <div className="w-full sm:w-[300px] xl:w-[200px] sm:h-32">
                     <img
                       src={item.image}
                       alt="qwe"
                       className="h-full w-full rounded-lg"
                     />
                   </div>
-                  <div className="w-[300px]">
+                  <div className="w-full xl:w-[300px]">
                     <div className="font-semibold text-blue-950">
                       {item.title}
                     </div>
@@ -83,7 +86,7 @@ function NewAddedBlog(props: PTypes) {
               ))}
             </div>
           ) : (
-            <div className="w-[800px] h-[60vh] flex justify-center items-center rounded-md bg-blue-50">
+            <div className="w-full xl:w-[800px] h-[60vh] flex justify-center items-center rounded-md bg-blue-50">
               <Loader color="#172554" type="spin" height={50} width={50} />
             </div>
           )}

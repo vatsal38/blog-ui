@@ -1,19 +1,29 @@
 import Navbar from "@components/common/Layout/NavBar";
 import SidePanel from "@components/common/Layout/SidePanel";
-import React, { Fragment, ReactNode } from "react";
+import React, { Fragment, ReactNode, useState } from "react";
 
 interface IProps {
   children: ReactNode;
 }
 
 const Layout: React.FC<IProps> = ({ children }) => {
+  const [isSideBarOpen, setIsSideBarOpen] = useState(false);
+
   return (
     <Fragment>
       <div className="flex">
-        <SidePanel />
-        <Navbar />
+        <SidePanel
+          isSideBarOpen={isSideBarOpen}
+          setIsSideBarOpen={setIsSideBarOpen}
+        />
+        <Navbar
+          isSideBarOpen={isSideBarOpen}
+          setIsSideBarOpen={setIsSideBarOpen}
+        />
       </div>
-      <div className="pl-28 pt-24 max-w-[1600px] mx-auto">{children}</div>
+      <div className="pl-6 sm:pl-28 pt-24 max-w-[1600px] mx-auto">
+        {children}
+      </div>
     </Fragment>
   );
 };

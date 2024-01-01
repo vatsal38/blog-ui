@@ -20,8 +20,8 @@ function MostPopular(props: IProps) {
         {!isBlogsLoading ? (
           <div className="flex flex-wrap gap-6 py-8">
             {mostPopularBlogs?.map((item: any, index: number) => (
-              <div className="max-w-[450px]" key={index}>
-                <div className="w-full h-[280px]">
+              <div className="sm:max-w-[450px]" key={index}>
+                <div className="w-full sm:h-[280px]">
                   <img src={item.image} alt="qwe" className="h-full w-full" />
                 </div>
                 <div className="px-2">

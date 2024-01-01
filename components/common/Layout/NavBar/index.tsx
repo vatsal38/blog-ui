@@ -3,8 +3,10 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { IoMdLogOut } from "react-icons/io";
 import AuthServices from "@services/AuthServices";
 import { useRouter } from "next/router";
+import { RiMenuUnfoldFill } from "react-icons/ri";
 
-function Navbar() {
+function Navbar(props: any) {
+  const { isSideBarOpen, setIsSideBarOpen } = props;
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,9 +16,14 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed top-0 h-20 shadow-lg w-full pl-28 flex items-center justify-between bg-blue-50">
-      <div className="text-3xl tracking-wide font-bold text-blue-950">
-        Explore the blogs with us
+    <div className="fixed top-0 h-20 shadow-lg w-full pl-6 sm:pl-28 flex gap-2 items-center justify-between bg-blue-50">
+      <div className="flex gap-3 items-center">
+        <div onClick={() => setIsSideBarOpen(true)}>
+          <RiMenuUnfoldFill className="block sm:hidden text-blue-950 text-4xl" />
+        </div>
+        <div className="text-xl sm:text-3xl tracking-wide font-bold text-blue-950">
+          Explore the blogs with us
+        </div>
       </div>
       <div
         className="flex h-[50px] mr-3 w-[50px] rounded-lg overflow-hidden justify-center items-center cursor-pointer"
