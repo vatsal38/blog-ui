@@ -21,7 +21,7 @@ const Layout: React.FC<IProps> = ({ children }) => {
           setIsSideBarOpen={setIsSideBarOpen}
         />
       </div>
-      <div className="pl-6 sm:pl-28 pt-24 max-w-[1600px] mx-auto">
+      <div className="pr-5 pl-6 sm:pl-28 pt-24 max-w-[1600px] mx-auto">
         {children}
       </div>
     </Fragment>

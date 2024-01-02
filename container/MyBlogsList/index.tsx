@@ -37,8 +37,8 @@ function MyBlogsList() {
             <div className="flex flex-col gap-4 w-full py-8">
               {blogData?.data?.map((item: any, index: number) => (
                 <Fragment key={index}>
-                  <div className="flex gap-4 w-full">
-                    <div className="w-[400px] h-[200px]">
+                  <div className="flex flex-col lg:flex-row gap-4 w-full">
+                    <div className="sm:w-[400px] lg:h-[200px]">
                       <img
                         src={item.image}
                         alt="qwe"
