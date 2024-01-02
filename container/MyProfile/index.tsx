@@ -66,7 +66,12 @@ function MyProfile() {
         </div>
       ) : (
         <div className="py-8 pl-12">
-          <Loader color="#172554" type="spin" height={25} width={25} />
+          <div className="flex flex-col gap-4">
+            <Loader color="#172554" type="spin" height={25} width={25} />
+            <p className="text-[15px] font-semibold text-red-600">
+              It cant take more than minute due to free server.
+            </p>
+          </div>
         </div>
       )}
     </Layout>

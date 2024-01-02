@@ -71,6 +71,11 @@ function Login() {
                       Password
                     </label>
                   </div>
+                  {isLoading && (
+                    <p className="w-72 text-[15px] font-semibold text-red-600">
+                      It cant take more than minute due to free server.
+                    </p>
+                  )}
                   <div className="relative">
                     <button
                       className="bg-blue-950 text-white font-semibold rounded-full px-12 h-10"

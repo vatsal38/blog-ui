@@ -51,7 +51,12 @@ function NewAddedBlog(props: PTypes) {
             </div>
           ) : (
             <div className="w-full h-[60vh] flex justify-center items-center rounded-md bg-blue-50">
-              <Loader color="#172554" type="spin" height={50} width={50} />
+              <div className="flex flex-col items-center gap-4">
+                <Loader color="#172554" type="spin" height={50} width={50} />
+                <p className="text-[15px] font-semibold text-red-600">
+                  It cant take more than minute due to free server.
+                </p>
+              </div>
             </div>
           )}
           {!isBlogsLoading ? (
@@ -87,7 +92,12 @@ function NewAddedBlog(props: PTypes) {
             </div>
           ) : (
             <div className="w-full xl:w-[800px] h-[60vh] flex justify-center items-center rounded-md bg-blue-50">
-              <Loader color="#172554" type="spin" height={50} width={50} />
+              <div className="flex flex-col items-center gap-4">
+                <Loader color="#172554" type="spin" height={50} width={50} />
+                <p className="text-[15px] font-semibold text-red-600">
+                  It cant take more than minute due to free server.
+                </p>
+              </div>
             </div>
           )}
         </div>
