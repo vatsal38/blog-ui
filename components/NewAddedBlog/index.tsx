@@ -54,7 +54,7 @@ function NewAddedBlog(props: PTypes) {
               <div className="flex flex-col items-center gap-4">
                 <Loader color="#172554" type="spin" height={50} width={50} />
                 <p className="text-[15px] font-semibold text-red-600">
-                  It cant take more than minute due to free server.
+                  It can take more than minute due to free server.
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ function NewAddedBlog(props: PTypes) {
               <div className="flex flex-col items-center gap-4">
                 <Loader color="#172554" type="spin" height={50} width={50} />
                 <p className="text-[15px] font-semibold text-red-600">
-                  It cant take more than minute due to free server.
+                  It can take more than minute due to free server.
                 </p>
               </div>
             </div>

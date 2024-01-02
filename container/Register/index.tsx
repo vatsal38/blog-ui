@@ -111,7 +111,7 @@ function Register() {
                   </div>
                   {isLoading && (
                     <p className="w-96 text-[15px] font-semibold text-red-600">
-                      It cant take more than minute due to free server.
+                      It can take more than minute due to free server.
                     </p>
                   )}
                   <div className="relative">

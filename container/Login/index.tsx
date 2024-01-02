@@ -73,7 +73,7 @@ function Login() {
                   </div>
                   {isLoading && (
                     <p className="w-72 text-[15px] font-semibold text-red-600">
-                      It cant take more than minute due to free server.
+                      It can take more than minute due to free server.
                     </p>
                   )}
                   <div className="relative">
